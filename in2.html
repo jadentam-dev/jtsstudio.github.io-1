@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to JTs' Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #66a3ff; /* Light Blue */
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background: #66a3ff; /* Medium Light Blue */
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            background: #fff;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #3399ff; /* Medium Light Blue */
+        }
+        .portfolio {
+            display: flex; /* Use flexbox for horizontal layout */
+            justify-content: space-between; /* Space between items */
+            flex-wrap: wrap; /* Allow wrapping to next line */
+        }
+        .project {
+            flex: 1; /* Allow the project divs to grow */
+            margin: 10px; /* Margin for spacing */
+            padding: 10px;
+            background: #e2e2e2;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.3s; /* Smooth transitions */
+            min-width: 200px; /* Minimum width for responsiveness */
+        }
+        .project:hover {
+            background: #d1d1d1; /* Slightly darker background on hover */
+            transform: translateY(-3px); /* Slight lift effect */
+        }
+        @media (max-width: 600px) {
+            .project {
+                flex: 100%; /* Full width on small screens */
+            }
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #66a3ff; /* Light Blue */
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to JTs' Personal Website</h1>
+    <p>Explore My Work and Passion</p>
+    <nav>
+        <div class="dropdown">
+            <button class="dropbtn">Home</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="posts.html">Posts</a>
+                <a href="projectlist.html">Project List</a>
+                <a href="admin.html">Admin Zone</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section id="about-me">
+    <h2>About Me</h2>
+    <p>Hello! I'm JTs, a passionate coder dedicated to various projects. I love coding and I'm always eager to learn new skills.</p>
+</section>
+
+<section id="portfolio">
+    <h2>My Portfolio</h2>
+    <div class="portfolio">
+        <div class="project" tabindex="0">
+            <h3>Project 1</h3>
+            <p>Python Calculator</p>
+        </div>
+        <div class="project" tabindex="0">
+            <h3>Project 2</h3>
+            <p>HTML - This Website</p>
+        </div>
+        <div class="project" tabindex="0">
+            <h3>Project 3</h3>
+            <p>Python Word Game</p>
+        </div>
+    </div>
+    <h1><a href="projectlist.html" target="_blank">See my full project list here</a></h1>
+</section>
+
+<section id="skills">
+    <h2>My Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>CSS</li>
+    </ul>
+</section>
+
+<section id="posts">
+    <h2>Posts</h2>
+    <h3>Newest Post</h3>
+    <a href="posts.html">See all posts here</a>
+</section>
+
+<footer>
+    <p>&copy; 2025 JTs. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
